@@ -1,5 +1,6 @@
 --vim.opt.guicursor = "nitin"
 
+vim.o.shell="cmd.exe"
 vim.opt.nu = true
 vim.opt.relativenumber = true
 

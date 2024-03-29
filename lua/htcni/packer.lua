@@ -46,4 +46,34 @@ return require('packer').startup(function(use)
       { 'rafamadriz/friendly-snippets' },
     }
   }
+
+  -- Auto pairs
+  use {
+    "windwp/nvim-autopairs",
+  }
+
+  -- Nvim surround
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+  })
+
+  -- Comment
+  use {
+    'numToStr/Comment.nvim',
+  }
+  use {
+    'JoosepAlviste/nvim-ts-context-commentstring',
+  }
+
+  -- Toggle term
+  use { "akinsho/toggleterm.nvim",
+    tag = '*',
+  }
+
+  -- status line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 end)
